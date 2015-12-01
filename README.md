@@ -377,3 +377,67 @@ This command will walk you through all of your changes. This is your opportunity
 git commit -m "short but descriptive commit message goes here"
 git push origin master
 ```
+
+## EXERCISE TWO - RIDES
+
+Ok, you have everything you need to do this next one on your own. I'll get you started:
+
+```
+touch lib/rides.js
+touch spec/rides_spec.js
+```
+
+Take it one step at a time and remember the following:
+
+* Write your test first
+* Red, green, refactor
+* Add, commit, and push early and often
+
+If you need to, simply go back to the beginning of this lesson and just follow the steps again, but substitute the necessary info so that it applies to this new challenge.
+
+__About RIDES:__
+
+*  `rides.js` exports a function called `isTallEnough`
+*  `isTallEnough` takes two arguments:
+  * a `child` object
+  * a `ride` object
+* The function determines if the child is tall enough to go on the ride. It should return `true` or `false`.
+
+__Sample Objects:__
+
+```
+var child1 = {
+  height: 3,
+  name: "Julian",
+  age: 3
+};
+
+var child2 = {
+  height: 4,
+  name: "Cero",
+  age: 4
+};
+```
+```
+var ride1 = {
+  minHeight: 3,
+  maxHeight: 7
+};
+
+var ride2 = {
+  minHeight: 4,
+  maxHeight: 7
+};
+```
+
+__NOTE:__ This time, practice writing two `it` statements in your `describe` block.
+
+```
+it('determines when a child is too short', function() {
+
+});
+
+it('determines when a child is tall enough', function() {
+
+});
+```
