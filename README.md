@@ -14,9 +14,13 @@ jasmine init
 __What did we get when we did `jasmine init`?__
 
 ROOT_FOLDER
+
     |--spec
+
     |    |--support
+
     |          |--jasmine.json
+    
     |--README.md
 
 When we initialize jasmine in our project, jasmine spins up a `spec` directory with nothing in it, and a `support` directory with a `jasmine.json` file. The `spec` directory is where you should put all of your test files. The `support` directory is where jasmine
